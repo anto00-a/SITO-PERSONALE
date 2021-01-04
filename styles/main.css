@@ -1,0 +1,253 @@
+header {
+  height: 150px;
+  background-color: #171717;
+}
+
+header nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .logo {
+  height: 100px;
+  width: 100px;
+  margin-left: 119px;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #f7bd00;
+  position: absolute;
+  left: 99px;
+  border-radius: 0 10px 10px 0;
+  font-family: 'Bell MT';
+}
+
+header nav .hamburger {
+  display: none;
+}
+
+header nav .nav {
+  margin-right: 50px;
+}
+
+header nav .nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .nav ul li {
+  margin-left: 10px;
+  padding: 0 10px;
+  height: 30px;
+  border-bottom: 2px solid  #171717;
+}
+
+header nav .nav ul li:hover {
+  border-bottom: 2px solid  #f7bd00;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header nav .nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 90%;
+  margin: 20px 0 100px auto;
+}
+
+.home .profile {
+  background: url("../assets/2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  width: 35%;
+  border-radius: 0 30px 30px 0;
+  border: 30px solid #f7bd00;
+}
+
+.home .profile .bg-yellow {
+  width: 47%;
+  height: 760px;
+  background-color: #f7bd00;
+  z-index: -1;
+  position: relative;
+  top: -30px;
+  left: -46%;
+}
+
+.home .description {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .description .description_content {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.home .description .description_content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .description .description_content .hi {
+  font-size: 25px;
+  margin: 0;
+}
+
+.home .description .description_content .name {
+  font-size: 35px;
+  color: #f7bd00;
+  margin: 0;
+}
+
+.home .description .description_content .name span {
+  color: white;
+}
+
+.home .description .description_content p {
+  font-size: 18px;
+}
+
+.home .description .description_content button {
+  width: 200px;
+  height: 55px;
+  background-color: #f7bd00;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  margin-top: 25px;
+}
+
+.home .description .description_content button:hover {
+  cursor: pointer;
+  background-color: #C19400;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+/*.bg-yellow{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    background-color: #C19400;
+}*/
+.progetti {
+  width: 100%;
+  height: 900px;
+  margin-top: 20px;
+}
+
+.progetti .container_card {
+  /*max-width: 80%;
+        height: 100%;
+        margin: auto;
+        background-color: yellow;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;*/
+  max-width: 77%;
+  height: 100%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33.3% 33.3% 33.3%;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+  -ms-grid-rows: 300px 300px 300px;
+      grid-template-rows: 300px 300px 300px;
+  gap: 0px 0px;
+      grid-template-areas: ". . ." ". . ." ". . .";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.progetti .card {
+  width: 350px;
+  height: 200px;
+  position: relative;
+  z-index: 0;
+  border-radius: 15px;
+}
+
+.progetti .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.progetti .card .filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: rgba(255, 255, 0, 0);
+  border-radius: 15px;
+}
+
+.progetti .card .filter:hover {
+  cursor: pointer;
+  background-color: #C19400;
+  opacity: 0.8;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 1000;
+  color: white;
+}
+
+body {
+  background-color: #171717;
+  color: white;
+  font-family: 'Segoe UI';
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
