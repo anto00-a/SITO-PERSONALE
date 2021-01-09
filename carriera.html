@@ -12,7 +12,11 @@
     <header>
         <nav>
             <div class="logo">AL</div>
-            <div class="hamburger"></div>
+            <div class="hamburger" onclick="hamburger()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
             <div class="nav">
                 <ul>
                     <li><a href=index.html>HOME</a></li>
@@ -22,8 +26,244 @@
                 </ul>
             </div>    
         </nav>
-    </header> 
+    </header>
+    <main class="carriera">
+        <h2>LE MIE INFO</h2>
+        <div class="info">
+            
+            <div class="info_l">
+                <ul>
+                    <li>Nome: <p>Antonio</p></li>
+                    <li>Anni: <p>20</p></li>
+                    <li>Nazionalità: <p>Italiano</p></li>
+                    <li>Numero: <p>+39 3286297580</p></li>
+                </ul>
+            </div>
+            <div class="info_r">
+                <ul>
+                    <li>Cognome: <p>Laterza</p></li>
+                    <li>Email: <p>antoniolaterza520@gmail.com</p></li>
+                    <li>Residenza: <p>Altamura (BA)</p></li>
+                    <li>Lingue: <p>Italiano | Inglese | Francese</p></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <h2>LE MIE SKILLS</h2>
+        <div class="myskills">
+            <div class="card">
+                <div class="percent">
+                    <svg height="100" width="100">
+                        <circle class='first' cx="70" cy="70" r="70" />
+                        <circle id="html" cx="70" cy="70" r="70" />
+                    </svg>
+                    <div class="number">
+                        <h2>90<span>%</span></h2>
+                    </div>
+                </div>
+                <div class="text">HTML</div>
+            </div>
+            <div class="card">
+                <div class="percent">
+                    <svg height="100" width="100">
+                        <circle class='first' cx="70" cy="70" r="70"/>
+                        <circle id="css" cx="70" cy="70" r="70"/>
+                    </svg>
+                    <div class="number">
+                        <h2>80<span>%</span></h2>
+                    </div>
+                </div>
+                <div class="text">CSS</div>
+            </div>
+            <div class="card">
+                <div class="percent">
+                    <svg height="100" width="100">
+                        <circle class='first' cx="70" cy="70" r="70"/>
+                        <circle id="javas" cx="70" cy="70" r="70"/>
+                    </svg>
+                    <div class="number">
+                        <h2>65<span>%</span></h2>
+                    </div>
+                </div>
+                <div class="text">JAVASCRIPT</div>
+            </div>
+            <div class="card">
+                <div class="percent">
+                    <svg height="100" width="100">
+                        <circle class='first' cx="70" cy="70" r="70"/>
+                        <circle id="react" cx="70" cy="70" r="70"/>
+                    </svg>
+                    <div class="number">
+                        <h2>50<span>%</span></h2>
+                    </div>
+                </div>
+                <div class="text">REACT</div>
+            </div>
+            <div class="card">
+                <div class="percent">
+                    <svg height="100" width="100">
+                        <circle class='first' cx="70" cy="70" r="70"/>
+                        <circle id="wordp" cx="70" cy="70" r="70"/>
+                    </svg>
+                    <div class="number">
+                        <h2>70<span>%</span></h2>
+                    </div>
+                </div>
+                <div class="text">WORDPRESS</div>
+            </div>
+            <div class="card">
+                <div class="percent">
+                    <svg height="100" width="100">
+                        <circle class='first' cx="70" cy="70" r="70"/>
+                        <circle id="php" cx="70" cy="70" r="70"/>
+                    </svg>
+                    <div class="number">
+                        <h2>30<span>%</span></h2>
+                    </div>
+                </div>
+                <div class="text">PHP</div>
+            </div>
+        </div>
+        <div class="myskills-m">
+            <div class="card-m">
+                <div class="percent-m">
+                    <svg height="100" width="100">
+                        <circle class='first-m' cx="50" cy="50" r="50" />
+                        <circle id="html-m" cx="50" cy="50" r="50"/>
+                    </svg>
+                    <div class="number-m">
+                        <h2>90<span>%</span></h2>
+                    </div>
+                </div>
+                <div class="text-m">HTML</div>
+            </div>
+            <div class="card-m">
+                <div class="percent-m">
+                    <svg height="100" width="100">
+                        <circle class='first-m' cx="50" cy="50" r="50"/>
+                        <circle id="css-m" cx="50" cy="50" r="50"/>
+                    </svg>
+                    <div class="number-m">
+                        <h2>80<span>%</span></h2>
+                    </div>
+                </div>
+                <div class="text-m">CSS</div>
+            </div>
+            <div class="card-m">
+                <div class="percent-m">
+                    <svg height="100" width="100">
+                        <circle class='first-m' cx="50" cy="50" r="50"/>
+                        <circle id="javas-m" cx="50" cy="50" r="50"/>
+                    </svg>
+                    <div class="number-m">
+                        <h2>65<span>%</span></h2>
+                    </div>
+                </div>
+                <div class="text-m">JAVASCRIPT</div>
+            </div>
+            <div class="card-m">
+                <div class="percent-m">
+                    <svg height="100" width="100">
+                        <circle class='first-m' cx="50" cy="50" r="50"/>
+                        <circle id="react-m" cx="50" cy="50" r="50"/>
+                    </svg>
+                    <div class="number-m">
+                        <h2>50<span>%</span></h2>
+                    </div>
+                </div>
+                <div class="text-m">REACT</div>
+            </div>
+            <div class="card-m">
+                <div class="percent-m">
+                    <svg height="100" width="100">
+                        <circle class='first-m' cx="50" cy="50" r="50"/>
+                        <circle id="wordp-m" cx="50" cy="50" r="50"/>
+                    </svg>
+                    <div class="number-m">
+                        <h2>70<span>%</span></h2>
+                    </div>
+                </div>
+                <div class="text-m">WORDPRESS</div>
+            </div>
+            <div class="card-m">
+                <div class="percent-m">
+                    <svg height="100" width="100">
+                        <circle class='first-m' cx="50" cy="50" r="50"/>
+                        <circle id="php-m" cx="50" cy="50" r="50"/>
+                    </svg>
+                    <div class="number-m">
+                        <h2>30<span>%</span></h2>
+                    </div>
+                </div>
+                <div class="text-m">PHP</div>
+            </div>
+        </div>
+        <hr>
+        <h2>ISTRUZIONE & OBIETTIVI</h2>
+        <div class="container">
+            <div class="istruzione">
+                <div class="container-item">
+                    <hr>
+                    <div class="item1">
+                        <p class="data">2020 - PRESENTE</p>
+                        <h2>FRONT-END DEVELOPER STUDENT</h2>
+                        <P>Percorso con il quale sto migliorando
+                            le mie competenze nell' ambito della
+                            programmazione web
+                        </P>
+                    </div>
+                    <div class="item2">
+                        <p>START2IMPACT</p>
+                    </div>
+                </div>
+                <div class="container-item">
+                    <hr>
+                    <div class="item1">
+                        <p class="data">2014 - 2019</p>
+                        <h2>CONSEGUIMENTO DIPLOMA</h2>
+                        <P>Conseguito diploma in Sistemi Informativi
+                            Aziendali con valutazione 74/100
+                        </P>
+                    </div>
+                    <div class="item2">
+                        <p>I.T.E.S. F.M. GENCO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="obiettivi">
+                <div class="container-item">
+                    <hr>
+                    <div class="item1">
+                        <p class="data">OBIETTIVO</p>
+                        <h2>FRONT-END DEVELOPER FREELANCER</h2>
+                        <P>Diventare Freelancer per creare 
+                            progetti personali
+                        </P>
+                    </div>
+                    <div class="item2">
+                        <p>ALTAMURA</p>
+                    </div>
+                </div>
+                <div class="container-item">
+                    <hr>
+                    <div class="item1">
+                        <p class="data">OBIETTIVO</p>
+                        <h2>UI/UX</h2>
+                        <P>Studiare UX/UI per offrire alle aziende 
+                            ulteriori competenze.
+                        </P>
+                    </div>
+                    <div class="item2">
+                        <p>START2IMPACT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
+        <p class="copy">© ANTONIO LATERZA</p>
+        <P>Created by AnTO with </P><span><img src="./assets/cuore.svg"></span>
     </footer> 
 </body>
+<script src="./index.js"></script>
 </html>

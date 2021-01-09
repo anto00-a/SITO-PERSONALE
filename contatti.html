@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antonio Laterza-Contatti</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/de369e824f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bell+MT:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Segoe+UI:300,400,500,700&display=swap" />
 </head>
@@ -12,7 +13,11 @@
     <header>
         <nav>
             <div class="logo">AL</div>
-            <div class="hamburger"></div>
+            <div class="hamburger" onclick="hamburger()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
             <div class="nav">
                 <ul>
                     <li><a href=index.html>HOME</a></li>
@@ -22,8 +27,42 @@
                 </ul>
             </div>    
         </nav>
-    </header> 
-    <footer>
+    </header>
+    <main class="contatti">
+        <h2>I MIEI CONTATTI</h2>
+        <div class="container_contatti">
+            <div class="container_social">
+                <h3>CONTATTAMI!</h3>
+                <p>Ciao! In questa sezione trovi tutti gli strumenti attraverso i quali puoi contattarmi per collaborazioni o altro. 
+                    Tranquillo, i tuoi dati saranno al sicuro e non ci sarà alcun tipo di spam.<br>Rispondo generalmente entro 24h.
+                </p>
+                <div class="social">
+                    <a href="https://www.instagram.com/antonio_laterza_/" target="_blank" ><div class="icon first"><i class="fab fa-instagram"></i></div></a>
+                    <a href="https://www.facebook.com/tony.laterza.5/" target="_blank" ><div class="icon"><i class="fab fa-facebook-f"></i></div></a>
+                    <a href="https://www.linkedin.com/in/antonio-laterza-773951164/" target="_blank" ><div class="icon"><i class="fab fa-linkedin-in"></i></div></a>
+                    <a href="https://twitter.com/Antonio97432958" target="_blank" ><div class="icon"><i class="fab fa-twitter"></i></div></a>
+                    <a href="https://github.com/anto00-a" target="_blank" ><div class="icon"><i class="fab fa-github"></i></div></a>
+                    
+                </div>
+            </div>
+            <div class="container_form">
+                <h3>SCRIVIMI!</h3>
+                <form>
+                    <div class="input">
+                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="Cognome">   
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <textarea placeholder="Scrivi un messaggio qui..."></textarea>
+                </form>
+                <button type="submit">INVIA</button>
+            </div>
+        </div>
+    </main>
+    <footer class="margin">
+        <p class="copy">© ANTONIO LATERZA</p>
+        <P>Created by AnTO with </P><span><img src="./assets/cuore.svg"></span>
     </footer> 
 </body>
+<script src="./index.js"></script>
 </html>

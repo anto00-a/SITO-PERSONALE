@@ -1,0 +1,194 @@
+.contatti{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        text-align: center;
+    }
+    .container_contatti{
+        display: flex;
+        align-items:center;
+        width: 70%;
+        margin:50px auto;
+        .container_social{
+            width: 40%;
+            height: 377px;
+            position: relative;
+            p{
+                width: 80%;
+                font-size: 14px;
+            }
+            .social{
+                display: flex;
+                justify-content: left;
+                position: absolute;
+                bottom: 0;
+                
+                .icon{
+                    margin-left: 30px;
+                }
+                .first{
+                    margin: 0;
+                }
+            }
+        }
+        .container_form{
+            width: 60%;
+            position: relative;
+            height: 377px;
+            h3{
+                margin-left: 20px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                
+                textarea{
+                    margin-top: 50px;
+                    max-width: 100%;
+                    height: 125px;
+                    background-color: rgb(44, 44, 44);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    resize: none;
+                    border-radius: 20px;
+                    font-family: inherit;
+                    margin-left: 20px;
+                    outline: none;
+                    &::placeholder{
+                        color: rgb(179, 179, 179);
+                    }
+                }
+                .input{
+                    display: flex;
+                    justify-content: flex-start;
+                    input{
+                        outline: none;
+                        color: white;
+                        margin-left: 20px;
+                        border-radius: 20px;
+                        height: 20px;
+                        background-color: rgb(44, 44, 44);
+                        border: none;
+                        padding: 10px;
+                        width: 31%;
+                        &::placeholder{
+                            color: rgb(179, 179, 179);
+                        }
+                    }
+                }
+            }
+            button{
+                width: 160px;
+                height: 40px;
+                background-color: #f7bd00;
+                font-size: 17px;
+                border-radius: 20px;
+                border: none;
+                margin-left: 20px;
+                color: white;
+                position: absolute;
+                bottom: 0;
+                outline: none;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.fab{
+    font-size: 30px;
+    color: white;
+    &:hover{
+        animation: icons 0.5s linear infinite alternate forwards;
+    }
+    
+}
+.margin{
+    margin-top: 140px;
+}
+
+@keyframes icons{
+    from{
+        color: #f7bd00;
+        transform: rotate(-30deg);
+    }
+    to{
+        color: #f7bd00;
+        transform: rotate(30deg);
+    }
+}
+
+
+
+
+@media screen and ( max-width:676px){
+    .contatti{
+        height: 100%;
+        width: 100%;
+        .container_contatti{
+            width: 100%;
+            flex-direction: column;
+            .container_social{
+                width: 80%;
+                height: 335px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3{
+                    text-align: center;
+                }
+                p{
+                    width: 100%;
+                    text-align: center;
+                }
+                .social{
+                    position: relative;
+                    margin-top: 70px;
+                }
+            }
+            .container_form{
+                width: 90%;
+                height: 507px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                h3{
+                    text-align: center;
+                    margin-left: 0;
+                    
+                }
+                form{
+                    width: 100%;
+                    .input{
+                        flex-direction: column;
+                        input{
+                            margin:15px auto;
+                            width: 80%;
+                        }
+                    }
+                    textarea{
+                        width: 80%;
+                        margin: 15px auto;
+                    }
+                }
+                button{
+                    width: 85%;
+                    position: relative;
+                    margin-left: 0;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:969px){
+    .container_contatti{
+        width: 85%!important;
+    }
+}
