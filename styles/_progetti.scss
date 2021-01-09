@@ -56,8 +56,20 @@
 @media screen and ( max-width: 860px ){
     .container_card{
         grid-template-rows: 300px 300px 300px 300px 300px !important;
+        width: 60%;
         .card{
             width: 100%;
+        }
+    }
+}
+@media screen and ( max-width: 696px ){
+    .container_card{
+        display: flex!important;
+        flex-direction: column!important;
+        width: 90%!important;
+        .card{
+            margin-top: 50px!important;
+            height: 200px!important;;
         }
     }
 }
