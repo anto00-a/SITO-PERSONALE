@@ -513,6 +513,15 @@ header nav .nav ul li a {
   gap: 0px 46px;
 }
 
+.progetti .container_card a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .progetti .card {
   width: 350px;
   height: 230px;
@@ -556,6 +565,13 @@ header nav .nav ul li a {
   transition: 1s;
   z-index: 1000;
   color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .container_card {
+    -ms-grid-rows: 300px 300px 300px !important;
+        grid-template-rows: 300px 300px 300px !important;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -1362,7 +1378,27 @@ footer .copy {
   left: 50px;
 }
 
+.error {
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.error img {
+  height: 250px;
+}
+
 @media screen and (max-width: 676px) {
+  .error {
+    height: 600px;
+  }
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

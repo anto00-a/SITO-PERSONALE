@@ -10,7 +10,7 @@ let home = document.querySelector('.home');
 let ul=navbar.firstElementChild;
 let li = ul.children;
 let footer = document.querySelector('footer')
-console.log(li)
+
 function hamburger() {
     let x = document.querySelector('.line1');
     let y = document.querySelector('.line2');

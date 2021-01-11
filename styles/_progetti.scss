@@ -16,7 +16,12 @@
         grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
         grid-template-rows: 300px 300px ;
         gap: 0px 46px;
+        a{
+        display: flex;
+        align-items: center;
+        }
     }
+    
     .card{
         width: 350px;
         height: 230px;
@@ -50,6 +55,11 @@
                 color: white;
             }
         }
+    }
+}
+@media screen and ( max-width: 1024px){
+    .container_card{
+        grid-template-rows: 300px 300px 300px!important;
     }
 }
 
