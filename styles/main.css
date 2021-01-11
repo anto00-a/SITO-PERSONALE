@@ -1190,6 +1190,9 @@ header nav .nav ul li a {
 
 .contatti .container_contatti .container_form button:hover {
   cursor: pointer;
+  background-color: #C19400;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .fab {

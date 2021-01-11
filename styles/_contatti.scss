@@ -95,6 +95,8 @@
                 outline: none;
                 &:hover{
                     cursor: pointer;
+                    background-color: #C19400;
+                    transition: 0.8s;
                 }
             }
         }
